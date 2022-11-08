@@ -1,0 +1,39 @@
+{
+  "title": "applyの正体を暴く",
+  "closed": true,
+  "archived": false,
+  "created_at": "2022-06-01",
+  "comments": [
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "まずはここに書いてることを読んでいく\nhttps://stackoverflow.com/questions/9737352/what-is-the-apply-function-in-scala"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "そもそもapplyは何のために存在するのか？\n\n> apply serves the purpose of closing the gap between Object-Oriented and Functional paradigms in Scala.\n\n訳: Scalaにおけるオブジェクト指向と関数型パラダイムの間のギャップを埋めることを目的としています"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "> Every function in Scala can be represented as an object.\n\nScalaのすべての関数は、オブジェクトとして表現することができる。\n"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "そして関数はFunction0~Function22のいずれかのTraitのインスタンスオブジェクトという扱いを受ける（日本語おかしいかもしれない）\n\nhttp://tkawachi.github.io/blog/2014/11/26/1/\n",
+      "body_updated_at": "2022-06-01"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "これわかりやすい\n\nhttps://scala-text.github.io/scala_text/function.html"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-01",
+      "body_markdown": "そもそもapplyについて気になったのはこの記事を読んだから\n\nhttps://stackoverflow.com/questions/54631761/functions-methods-in-scala-how-does-this-work"
+    }
+  ]
+}

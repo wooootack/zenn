@@ -1,0 +1,48 @@
+{
+  "title": "「りあクト！」を読む",
+  "closed": true,
+  "archived": false,
+  "created_at": "2022-04-20",
+  "comments": [
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "## 本でオススメされているVS Codeの拡張機能\n- ESLint(dbaeumer.vscode-eslint)\n- stylelint(stylelint.vscode-stylelint)\n- Prettier(esbenp.prettier-vscode)\n- Visual Studio IntelliCode(VisualStudioExptTeam.vscodeintellicode)\n- Bracket Pair Colorizer 2(CoenraadS.bracket-pair-colorizer-2)\n- indent-rainbow(oderwat.indent-rainbow)\n- vscode-icons(vscode-icons-team.vscode-icons)\n- Import Cost(wix.vscode-import-cost)\n- Git History(donjayamanne.githistory)\n- Debugger for Chrome(msjsdiag.debugger-for-chrome)\n- VSCodeVim(vscodevim.vim)\n- Remote - WSL(ms-vscode-remote.remote-wsl)\n- Live Share(ms-vsliveshare.vsliveshare)"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "## Reactのコンポーネントを作るときに心がけたいこと\n- コンポーネントに持たせるstateは極力減らす\n- stateは副作用の原因になり、これを排除できれば全てのコンポーネントを純粋関数で書くことに近づく\n- propsが同じなら必ず同じレンダリング結果になるコンポーネントを理想と考える"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "- VFC とは VoidFunctionComponentのエイリアス\n- FunctionComponentのpropsからchildrenを除いたもの\n- 子要素を使っているかは型で明示的に表した方がよいという流れでReact18からはFCのpropsからchildrenが削除される"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "https://react-typescript-cheatsheet.netlify.app/"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "- 関数コンポーネントでは、レンダリングしたい内容を戻り値として return で返す\n- ReactElementかnullを返すが、nullの場合そのコンポーネントは何もレンダリングしない\n- フラグメントは処理の結果中身がなくなる可能性があるときには使わない"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-20",
+      "body_markdown": "関係ないけど、こういうコンポーネントの分け方も良さそう\nhttps://engineering.linecorp.com/ja/blog/line-securities-frontend-3/"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-21",
+      "body_markdown": "useStateのsetXXXを使って値を更新するときに、現在の値を使う必要があるときは引数で取得できる(prev, props)のprevを使う\n非同期で行われるので普通のステートから取った場合それが最新とは限らない"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-04-21",
+      "body_markdown": "https://ja.reactjs.org/docs/thinking-in-react.html"
+    }
+  ]
+}

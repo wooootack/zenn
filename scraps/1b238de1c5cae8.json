@@ -1,0 +1,43 @@
+{
+  "title": "Scalaの=>の使われ方",
+  "closed": true,
+  "archived": false,
+  "created_at": "2022-06-06",
+  "comments": [
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-06",
+      "body_markdown": "名前渡しパラメータ\n\n```scala\ndef calculate(input: => Int) = input * 37\n```\n\nhttps://docs.scala-lang.org/ja/tour/by-name-parameters.html"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-08",
+      "body_markdown": "match式でマッチした際に実行する式を渡すとき\n\n```scala\nval taro = \"Taro\"\n// taro: String = \"Taro\"\n\ntaro match {\n  case \"Taro\" => \"Male\"\n  case \"Jiro\" => \"Male\"\n  case \"Hanako\" => \"Female\"\n}\n```\n\nhttps://scala-text.github.io/scala_text/control-syntax.html#match%E5%BC%8F"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-08",
+      "body_markdown": "無名関数\n\n```scala\nval add = (x: Int, y: Int) => x + y\n```\n\nhttps://scala-text.github.io/scala_text/function.html#%E7%84%A1%E5%90%8D%E9%96%A2%E6%95%B0"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-08",
+      "body_markdown": "関数の型定義\n\n```scala\ndef double(n: Int, f: Int => Int): Int = {\n  f(f(n))\n}\n```\n\nhttps://scala-text.github.io/scala_text/function.html#%E9%AB%98%E9%9A%8E%E9%96%A2%E6%95%B0\n"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-08",
+      "body_markdown": "別名でのimport\n\n```scala\nimport users.{UserPreferences => UPrefs} \n```\n\nhttps://docs.scala-lang.org/ja/tour/packages-and-imports.html"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-08",
+      "body_markdown": "自分型\n\n```scala\ntrait User {\n  def username: String\n}\n\ntrait Tweeter {\n  this: User =>  // thisが再割り当てされます\n  def tweet(tweetText: String) = println(s\"$username: $tweetText\")\n}\n\nclass VerifiedTweeter(val username_ : String) extends Tweeter with User {  // TweeterがUserを必要とするためミックスインします。\n\tdef username = s\"real $username_\"\n}\n\nval realBeyoncé = new VerifiedTweeter(\"Beyoncé\")\nrealBeyoncé.tweet(\"Just spilled my glass of lemonade\")  // \"real Beyoncé: Just spilled my glass of lemonade\"と出力します。\n```\n\nhttps://docs.scala-lang.org/ja/tour/self-types.html"
+    },
+    {
+      "author": "wooootack",
+      "created_at": "2022-06-10",
+      "body_markdown": "```scala\ndef func1(num: Int): (=> Int) => Int = { r =>\n  {\n    println(\"func1 start\")\n    r * num\n  }\n}\n\ndef func2(num: Int): Int => Int =\n  sdadsar => {\n    println(\"func2 start\")\n    sdadsar * num\n  }\n\ndef func3(num1: Int)(num2: Int) = num1 * num2\n\nval getFour = () => {\n  println(\"four\")\n  4\n}\n\nval result1 = func1(2)(getFour())\nval result2 = func2(2)(getFour())\nval result3 = func3(2)(4)\n\nprintln(result1) // 8\nprintln(result2) // 8\nprintln(result3) // 8\n\n```"
+    }
+  ]
+}
