@@ -221,7 +221,9 @@ https://techbookfest.org/product/wCDWvUCj8m07U6vuvv3YSu?productVariantID=cjZ9wf7
 
 ## 宣言
 
-最後に少しだけ宣伝ですが、ログラスではエンジニアを大募集していますので、ご興味がある方はぜひ以下もご覧いただければと思います。
+最後に少しだけ宣伝です！
+ログラスでは、これらの課題に立ち向かっていきたいアプリケーションエンジニアや一緒に立ち向かっていってくれるQAエンジニアを大募集中です。
+アプリケーションエンジニアとQAエンジニアの力を合わせてより良いプロダクト、開発組織を作っていきましょう！
 
 https://www.loglass.co.jp/recruit/for-engineers
 
