@@ -1,5 +1,5 @@
 ---
-title: "FAST×AIで考える、未来の組織像"
+title: "FAST×AIで考える、未来の組織像〜FASTはAI時代のスタンダードとなり得るか〜"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics:

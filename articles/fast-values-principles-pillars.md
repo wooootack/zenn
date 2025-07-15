@@ -1,5 +1,5 @@
 ---
-title: "FASTを支える 「価値」「原則」「柱」とは"
+title: "徹底解説！FASTを支える 「価値」「原則」「柱」とは？"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics:
