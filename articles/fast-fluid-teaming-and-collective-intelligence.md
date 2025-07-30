@@ -6,7 +6,7 @@ topics:
   - FAST
   - Agile
   - Scaling
-published: false
+published: true
 publication_name: loglass
 ---
 
