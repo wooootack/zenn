@@ -3,7 +3,7 @@ title: "106週2年連続記録達成！ Loglass Tech Blog Sprint の2年目を�
 emoji: "🎉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["テックブログ", "発信", "lg_tech_blog_sprint"]
-published: false
+published: true
 publication_name: "loglass"
 ---
 
