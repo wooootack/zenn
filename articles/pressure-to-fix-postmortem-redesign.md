@@ -8,7 +8,7 @@ topics:
   - インシデント対応
   - チーム
   - ふりかえり
-published: false
+published: true
 publication_name: "loglass"
 ---
 
